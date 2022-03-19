@@ -135,7 +135,7 @@ class WebClientActor(queue: SourceQueueWithComplete[String], webClientFatherActo
   override def postStop(): Unit = {
     super.postStop()
     webClientFatherActor ! Left(id)
-    // TODO change to streams event of closing socket with remove Actor
+    // TODO change to streams event of closing socket with remove Actor.
   }
 }
 
